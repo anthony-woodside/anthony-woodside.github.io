@@ -2,19 +2,22 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Woodside</title>
+<title>Woodside.NZ</title>
 <style>
 	body{
 		margin:1em auto;
 		max-width:40em;
 		padding:0 .62em;
-		font:1.2em/1.62 serif;
+		font:1.2em/1.62 sans-serif;
 		background: rgba(253,245,228,70);
-	}
+		color: #6B8076;
+		background-image: url('image/seamless_paper_texture.png');
+
+}
 	h1 {
 		line-height:1.2;
-		color: #0080AF;
-		font:1.62 serif;
+		color: rgb(32,127,168);
+		font: 3em serif;
 
 	}
 	h2,h3 {
@@ -22,14 +25,22 @@
 		color: #A3ACA3;
 
 	}
-	a {
+	a:link {
 		color:  #FF3D30;
-		text-decoration: none;
-		border-bottom: 1px #B8E0DA;
+		text-decoration: underline;  
+		text-decoration-color: #B8E0DA;
+		<!-- border-bottom: 1px #B8E0DA; -->
+	}
+	a:visited {
+		color: #ff3D30;
+		text-decoration: underline;
+		text-decoration-color: #B8E0DA;
 	}
 	a:hover {
- 		text-decoration-color:  #B8E0DA;
-	}
+ 		text-decoration: underline;
+		text-decoration-color:  #FF3D30;
+		border-bottom: 1px #FF3D30;
+ 	}
 	
 	@media print{
 		body{
@@ -37,17 +48,28 @@
 				color: #A3ACA3;
 		}
 	}
+	.arrow {
+		border: solid #FF3D30;
+		border-width: 0 3px 3px 0;
+  		display: inline-block;
+ 		padding: 3px;
+	}	
+	.right {
+		transform: rotate(-45deg);
+  		-webkit-transform: rotate(-45deg);
+	}
 </style>
 <article>
 	<header>
-		<h1>Woodside</h1>
-		<aside> </aside>
+		<h1>Woodside . New Zealand</h1>
+		<aside><i class="arrow right"></i> 12,021 update.</aside>
 		<link href="https://micro.blog/arw" rel="me" />
 	</header>
-	<p><a href="http://anthony.woodside.nz/">Anthony Woodside</a></p>
+	<p><a href="http://anthony.woodside.nz/">Anthony Woodside</a> on micro.blog.</p>
 	<footer>
-		<h2>2021-01</h2>
+		<small><i class="arrow right"></i><i class="arrow right"></i>&nbsp;Gradual tinkering since 12,018—21<sup>(human era)</sup>.</small> 
 	</footer>
 </article>
 	
 </html>
+
